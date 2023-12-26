@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../asset/logo.png" />
+    <title>Help Service</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/98e0409db1.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+
+<body>
+    <!-- component -->
+    <section class="flex  ">
+        <!-- Left Pane -->
+        <div class="w-full bg-white lg:w-1/2 flex items-center justify-center mt-2">
+            <div class="lg:max-w-xl w-full  ">
+                <div class="flex justify-center items-center pb-2">
+                    <img src="../asset/logo.png" alt="" class="h-16">
+                </div>
+                <h1 class="text-md font-semibold mb-6 text-black-500 text-center">Help Service Listing</h1>
+                <div class="max-w-lg sm:mx-auto mx-5  bg-white px-10 pt-2 pb-2 rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+                    <form action="" class="my-3">
+                        <h1 class="text-xl font-semibold mb-2 text-black-500 ">Create New Account</h1>
+                        <div class="flex flex-col space-y-4">
+                            <div class="grid grid-cols-1 gap-6 mt-4 md:grid-cols-2">
+                                <label for="firstName">
+                                    <p class="font-medium text-slate-700 pb-2">First Name</p>
+                                    <input id="firstName" name="firstName" type="text"
+                                        class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                                        placeholder="Enter First Name">
+                                </label>
+                                <label for="lastName">
+                                    <p class="font-medium text-slate-700 pb-2">Last Name</p>
+                                    <input id="lastName" name="lastName" type="lastName"
+                                        class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                                        placeholder="Enter First Name">
+                                </label>
+                                <label for="email" class="col-span-2">
+                                    <p class="font-medium text-slate-700 pb-2">Your Email</p>
+                                    <input id="email" name="email" type="email"
+                                        class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                                        placeholder="Enter email address">
+                                </label>
+                                <label for="password">
+                                    <p class="font-medium text-slate-700 pb-2">Password</p>
+                                    <input id="password" name="password" type="password"
+                                        class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                                        placeholder="Enter your password">
+                                </label>
+                                <label for="password">
+                                    <p class="font-medium text-slate-700 pb-2">Confirm Password</p>
+                                    <input id="password" name="password" type="password"
+                                        class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                                        placeholder="Enter your password">
+                                </label>
+                                
+                            </div>
+                                
+                            <a href="">
+                                <button
+                                class="w-full py-3 font-medium text-white bg-green-600 hover:bg-[#52B69A] rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center">
+                                <span>Create Account</span>
+                            </button>
+                            </a>
+                            <div class="my-5">
+                                <button class="w-full text-center py-3 my-3 border flex space-x-2 items-center justify-center border-slate-200 rounded-lg text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
+                                    <img src="https://www.svgrepo.com/show/355037/google.svg" class="w-6 h-6" alt=""> <span>Login with Google</span>
+                                </button>
+                            </div>
+                            <p class="text-center">Already have account? <a href="#"
+                                    class="text-indigo-600 font-medium inline-flex space-x-1 items-center"><span>Sign in here</span><span><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg></span></a></p>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Right Pane -->
+        <div class="hidden lg:flex items-center justify-center lg:w-1/2  bg-white text-black">
+            <div class="w-full">
+                <img src="../asset/Sign up-amico (1).svg" alt="" class="max-w-xl lg:ml-7">
+                
+                </svg>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

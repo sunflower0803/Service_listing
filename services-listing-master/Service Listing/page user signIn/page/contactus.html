@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../asset/logo.png" />
+    <title>Help Service</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/98e0409db1.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+
+<body>
+    <!-- Contact Us -->
+    <header>
+      <nav
+        class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px- py-2"
+        >
+          <a href="../../page user signIn/page/homepage.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="../../asset/logo.png"
+              class="h-12 ml-2"
+              alt="Flowbite Logo"
+            />
+            <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+          </a>
+          <!-- user -->
+          <div class="flex items-center order-2 md:order-2 lg:order-4 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+              <span class="sr-only">Open user menu</span>
+              <img class="w-8 h-8 rounded-full" src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/08df5a62fa61e4a00397244140117925-1681951816622/592b11b6-53e9-496f-9799-f4f49988203b.jpg" alt="user photo">
+            </button>
+            <!-- Dropdown menu -->
+            <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+              <div class="px-4 py-3">
+                <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
+                <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
+              </div>
+              <ul class="py-2" aria-labelledby="user-menu-button">
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Become a seller</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                </li>
+              </ul>
+            </div>
+           
+        </div>
+  
+  
+          <!-- favorite -->
+          <div class="flex ml-5 lg:order-3 md:order-1 md:ml-14  md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="text-white bg-[#52B69A]  hidden rtl:space-x-reverse md:block hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-md  px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Favorite</button>
+            <!-- <button type="button" class="text-white bg-green-500 hidden md:block hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign Up</button> -->
+         </div>
+          <!-- humburger -->
+          <button data-collapse-toggle="navbar-search" type="button" class="flex order-2 items-center mr-3 p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+          </button>
+          <!-- search lg-->
+          <div class="lg:order-1 md:ml-12"> 
+            <div class="relative hidden w-80  md:block ">
+              <div class="absolute inset-y-0 start-0 flex  items-center ps-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+                <span class="sr-only">Search icon</span>
+              </div>
+              <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+            </div>
+            
+          </div>
+           <!-- search md -->
+          <div class="relative md:hidden mr-5">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+             
+            </div>
+            <input type="text" id="search-navbar" class="block w-52 sm:w-60 md:w-62 px-2  ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+          </div>
+          <!-- menu -->
+          <div class="hidden w-full item-center order-3 lg:order-2 lg:flex lg:w-auto  " id="navbar-search">
+            <ul
+              class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 md:border-0 lg:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="../../page user signIn/page/homepage.html"
+                  class="block py-2 px-3 text-gray-900 font-sans hover:bg-gray-100 text-lg rounded md:bg-transparent md:text-gray-900 lg:hover:text-[#52B69A] md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 font-sans text-lg px-3 md:text-gray-800 md:bg-white text-gray-800 bg-white rounded hover:bg-gray-100  md:hover:bg-transparent md:border-0 md:hover:text-[#52B69A] md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Service
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="../../page user signIn/page/services/restaurant.html"
+                        class="block px-4 py-2 font-sans  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Restaurant</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../../page user signIn/page/services/beauty.html"
+                        class="block px-4 py-2 font-sans hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Beauty</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../../page user signIn/page/services/autoservice.html"
+                        class="block px-4 py-2 hover:bg-gray-100 font-sans dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Auto Service</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </div> -->
+                </div>
+              </li>
+              <li>
+                <a
+                  href="../../page user signIn/page/aboutus.html"
+                  class="block py-2 px-3 text-gray-900 rounded md:text-gray-900 md:bg-white font-sans text-lg  md:hover:bg-transparent md:border-0 md:hover:text-[#52B69A] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../page user signIn/page/contactus.html"
+                  class="block py-2 px-3 lg:text-[#52B69A] font-sans text-lg rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../page user signIn/page/contactus.html"
+                  class="block md:hidden font-sans text-lg py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Favorite</a
+                >
+              </li>
+              <!-- <li>
+                <a
+                  href="#"
+                  class="block md:hidden py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Sign Up</a
+                >
+              </li> -->
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+  </header>
+<main>
+     <!-- component -->
+     <section>
+        <h1 class="text-4xl text-center font-semibold pt-6">We are here to help you</h1>
+        <section class="flex h-screen">
+            <!-- Left Pane -->
+            <div class="w-full bg-white lg:w-1/2 flex items-center justify-center">
+                <div class="max-w-xl w-full p-6 lg:px-12">
+                    <h1 class="text-xl font-semibold mb-4 text-black-500 ">Let ‘s talk</h1> 
+                    <p class=" text-slate-700 pb-2">To request a quote or want to meet up for coffee, 
+                        contact us <br> directly or fill out the form and we will get back to you promptly</p>
+                    <div class="max-w-lg mx-auto my-8 bg-white p-10 pt-2 pb-2 rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+                        <form action="" class="my-10">
+                            <div class="flex flex-col space-y-5">
+                                    <label for="lastName">
+                                        <p class="font-medium text-slate-700 pb-2">Name</p>
+                                        <input id="lastName" name="lastName" type="lastName"
+                                            class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                                            placeholder="Enter Name">
+                                    </label>
+                                    <label for="email" class="col-span-2">
+                                        <p class="font-medium text-slate-700 pb-2">Email</p>
+                                        <input id="email" name="email" type="email"
+                                            class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                                            placeholder="Enter email address">
+                                    </label>
+                                    <label for="Desc" >
+                                        <p class="font-medium text-slate-700 pb-2">Message</p>
+                                        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""></textarea>
+                                    </label>
+                                    
+                
+                                <button
+                                    class="w-full py-3 font-medium text-white bg-green-600 hover:bg-[#52B69A] rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center">
+                                    <span>Submit</span>
+                                </button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Right Pane -->
+            <div class="hidden lg:flex items-center justify-center w-1/2 bg-white text-black">
+                <div class="w-full text-center">
+                    <img src="../../asset/Contact us-amico.png" alt="" class="max-w-xl lg:ml-12">
+                    
+                    
+                </div>
+            </div>
+            
+         </section>
+     </section>
+     
+
+    
+</main>
+<footer class="max-w-screen-xl mx-auto bg-slate-3000 dark:bg-gray-900 items-center mx-auto p-5 md:p-10 ">
+  <section class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+    <div class="mb-6 md:mb-0 ">
+      <a href="../../page user signIn/page/homepage.html" class="flex items-center ">
+        <img src="../../asset/logo.png" class="h-12 me-3" alt="FlowBite Logo" />
+        <span class="font-medium text-2xl">Help</span>
+
+      </a>
+      <div class="mt-4">
+        <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+          <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+              </path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class=" ">
+      <h2 class="mb-4 text-sm font-medium text-gray-900 uppercase dark:text-white">Service </h2>
+      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+        <li class="mb-2">
+          <a href="../../page user signIn/page/services/restaurant.html" class="hover:underline">Restaurant </a>
+        </li>
+        <li class="mb-2">
+          <a href="../../page user signIn/page/services/beauty.html" class="hover:underline">Beauty shop</a>
+        </li>
+        <li class="mb-2">
+          <a href="../../page user signIn/page/services/autoservice.html" class="hover:underline">Auto Service </a>
+        </li>
+      </ul>
+    </div>
+    <div class="">
+      <h2 class="mb-4 text-sm font-medium text-gray-900 uppercase dark:text-white">About us</h2>
+      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+        <li class="mb-2">
+          <a href="../../page user signIn/page/aboutus.html" class="hover:underline ">who we are </a>
+        </li>
+        <li class="mb-2">
+          <a href="../../page user signIn/page/aboutus.html" class="hover:underline">Our mission</a>
+        </li>
+        <li class="mb-2">
+          <a href="../../page user signIn/page/aboutus.html" class="hover:underline">Our Team member </a>
+        </li>
+      </ul>
+    </div>
+    <div class="">
+      <h2 class="mb-4 text-sm  font-medium text-gray-900 uppercase dark:text-white">Contact us</h2>
+      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+        <li class="mb-2">
+          <a href="#" class="hover:underline">Send message</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+        </li>
+        <li class="mb-2">
+          <a href="tel:+855-123456789" class="hover:underline">Hot Line(+885 1012323)</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <hr class="my-0 border-gray-200 sm:mx-auto dark:border-gray-700 my-8" />
+    <div class=" flex items-center justify-center">
+      <span class="text-sm text-gray-500 text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"
+          class="hover:underline ">Flowbite™</a>Help service listing and
+        release marks are registered trademarks of help.
+      </span>
+    </div>
+  </section>
+</footer>
+   
+</body>
+
+</html>
